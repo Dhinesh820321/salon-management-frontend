@@ -105,13 +105,13 @@ export default function Employees() {
 
     if (isModalOpen.current) return;
 
-    const interval = setInterval(() => {
-      if (!isModalOpen.current) {
-        loadData();
-      }
-    }, 5000);
+    // const interval = setInterval(() => {
+    //   if (!isModalOpen.current) {
+    //     loadData();
+    //   }
+    // }, 5000);
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   const handleSubmit = async (e) => {
